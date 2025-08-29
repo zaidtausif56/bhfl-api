@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 
-const FULL_NAME = (process.env.FULL_NAME || "Md Zaid Tausif").toLowerCase();
+const FULL_NAME = (process.env.FULL_NAME || "Md_Zaid_Tausif").toLowerCase();
 const DOB_DDMMYYYY = process.env.DOB_DDMMYYYY || "10072003";
 const EMAIL = process.env.EMAIL || "mdzaid.tausif2022@vitstudent.ac.in";
 const ROLL_NUMBER = process.env.ROLL_NUMBER || "22BCB0172";
@@ -94,3 +94,4 @@ app.get("/", (_req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`BFHL API running on port ${PORT}`));
+
